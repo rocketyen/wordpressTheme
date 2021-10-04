@@ -1,0 +1,23 @@
+# Ignore tout à la racine, sauf .gitignore et "wp-content"
+/*
+!.gitignore
+!wp-content
+
+# Ignore le contenu de "wp-content" sauf "plugins", "themes" et "mu-plugins"
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+!wp-content/mu-plugins/
+
+# Ignore le contenu de "plugins" sauf le dossier de NOTRE/NOS plugin(s) personnalisé(s) (si il y en a)
+# (la ligne ! sera à répêter pour chaque plugin à commiter...)
+wp-content/plugins/*
+#!wp-content/plugins/mon-plugin/
+
+# et du "must-use" nommé ici "important.php" (si il y en a)
+#wp-content/mu-plugins/*
+#!wp-content/mu-plugins/important.php
+
+# Ignore le contenu de "themes" sauf le dossier de NOTRE thème (si il y en a)
+wp-content/themes/*
+#!wp-content/themes/mon-theme/
