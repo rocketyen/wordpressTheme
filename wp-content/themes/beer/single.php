@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<!-- Pour vérifier qu'une image est présente -->
-<!-- <?php if (has_post_thumbnail()) : ?>
+<!-- Pour vérifier quune image est présente -->
+<?php if (has_post_thumbnail()) : ?>
     <div class="post__thumbnail">
         <?php the_post_thumbnail(); ?>
     </div>
@@ -32,4 +32,12 @@
 
 <?php endwhile;
 endif; ?>
+<div class="site__navigation">
+	<div class="site__navigation__prev">
+		<?php previous_post_link( 'Article Précédent<br>%link' ); ?>
+    </div>
+    <div class="site__navigation__next">
+        <?php next_post_link( 'Article Suivant<br>%link' ); ?>
+    </div>
+</div>
 <?php get_footer(); ?>
