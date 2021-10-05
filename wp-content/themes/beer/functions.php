@@ -61,8 +61,12 @@ function beer_assets() {
 }
 
 register_sidebar( array(
-	'id' => 'blog-sidebar',
-	'name' => 'Blog',
+  'id' => 'blog-sidebar',
+  'name' => 'Blog',
+  'before_widget'  => '<div class="site__sidebar__widget %2$s">',
+  'after_widget'  => '</div>',
+  'before_title' => '<p class="site__sidebar__widget__title">',
+  'after_title' => '</p>',
 ) );
 
 add_action( 'wp_enqueue_scripts', 'beer_assets' );
