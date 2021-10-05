@@ -29,6 +29,9 @@ Version: 1.0
     padding: 0px 50px 0px 0px;
     display: inline;
     font-size: 20px;
-
     color: white;
+}
+
+.logo{
+    width: 40px;
 }

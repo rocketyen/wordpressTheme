@@ -8,10 +8,12 @@
 </head>
 
 <body <?php body_class('site'); ?>>
+
   <header class="site_header">
     <a href="<?php echo home_url('/'); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
     </a>
+
     <?php
     wp_nav_menu(
       array(
