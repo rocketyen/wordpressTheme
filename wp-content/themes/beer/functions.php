@@ -46,17 +46,16 @@ function beer_assets() {
     // Déclaration de bootstrap style
     wp_enqueue_style(
         'bootstarp',
-        'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css',
-        false,
-        '5.1.1'
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css'
     );
 
     // Déclaration de bootstrap script
     wp_enqueue_script(
         'bootstrap',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js',
-        false,
-        '5.1.1'
+        array(), 
+        '5.1.1', 
+        true
     );
 
 }
