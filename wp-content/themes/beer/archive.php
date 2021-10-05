@@ -5,7 +5,6 @@
 
 		<article class="post">
 			<h2><?php the_title(); ?></h2>
-
 			<?php the_post_thumbnail(); ?>
 
 			<p class="post__meta">
