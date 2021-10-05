@@ -15,3 +15,7 @@ add_image_size( 'square', 256, 256, false );
 
 
 // Déclaration du menu de l'entête et du pied de page
+register_nav_menus( array(
+	'main' => 'Menu Principal',
+	'footer' => 'Bas de page',
+) );
