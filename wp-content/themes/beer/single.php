@@ -1,12 +1,9 @@
 <?php get_header(); ?>
-
-<!-- Pour vérifier quune image est présente -->
 <?php if (has_post_thumbnail()) : ?>
     <div class="post__thumbnail">
         <?php the_post_thumbnail(); ?>
     </div>
-<?php endif; ?> -->
-
+<?php endif; ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -28,10 +25,10 @@
             <div class="post__content">
                 <?php the_content(); ?>
             </div>
+            <?php comments_template(); // Par ici les commentaires ?>
         </article>
 
-<?php endwhile;
-endif; ?>
+<?php endwhile; endif; ?>
 <div class="site__navigation">
 	<div class="site__navigation__prev">
 		<?php previous_post_link( 'Article Précédent<br>%link' ); ?>
