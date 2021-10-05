@@ -7,7 +7,7 @@
   <?php wp_head(); ?>
 </head>
 
-//site:wq:wq
+
 <body <?php body_class('site'); ?>>
 
   <header class="site_header">
