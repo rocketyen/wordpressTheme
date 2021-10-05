@@ -16,3 +16,19 @@ Version: 1.0
 .admin-bar .menu {
 	top: 32px; /* on prend en compte le décalage */
 }
+
+.site__header__menu ul {
+    margin:20px 0px 20px 0px;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align:right;
+
+}
+.site__header__menu li {
+    padding: 0px 50px 0px 0px;
+    display: inline;
+    font-size: 20px;
+
+    color: white;
+}
