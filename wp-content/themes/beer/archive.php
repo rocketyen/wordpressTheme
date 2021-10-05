@@ -9,6 +9,9 @@
 				</article>
 		<?php endwhile;
 		endif; ?>
+
+		// ! Après la boucle pour éviter les répétitions
+		<?php posts_nav_link(); ?>
 	</main>
 
 	<aside class="site__sidebar">
