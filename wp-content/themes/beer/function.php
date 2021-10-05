@@ -14,8 +14,4 @@ add_image_size( 'products', 800, 600, false );
 add_image_size( 'square', 256, 256, false );
 
 
-// Déclaration du menu de l'entête etdu pied de page
-register_nav_menus( array(
-	'main' => 'Menu Principal',
-	'footer' => 'Bas de page',
-) );
+// Déclaration du menu de l'entête et du pied de page
