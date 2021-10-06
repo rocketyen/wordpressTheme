@@ -58,7 +58,6 @@ function beer_assets() {
         true
     );
 }
-add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts');
 
 register_sidebar( array(
   'id' => 'blog-sidebar',

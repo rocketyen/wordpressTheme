@@ -7,22 +7,32 @@
   <?php wp_head(); ?>
 </head>
 
-
 <body <?php body_class('site'); ?>>
-
   <header class="site_header">
-    <a href="<?php echo home_url('/'); ?>">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
-    </a>
-
-    <?php
-    wp_nav_menu(
-      array(
-        'theme_location' => 'main',
-        'container' => 'ul', // afin d'éviter d'avoir une div autour 
-        'menu_class' => 'site__header__menu', // ma classe personnalisée 
-      )
-    );
-    ?>
-    <?php get_search_form(); ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <a href="<?php echo home_url('/'); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="beer">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+            <?php
+            $itemsArray = wp_get_nav_menu_items(
+              'menuPersoHead'
+            );
+            foreach ($itemsArray as $item) {
+              echo '<li class="nav-item">
+              <a class="nav-link" href="' . $item->url . '">' . $item->title . '</a>
+            </li>';
+            }
+            ?>
+          </ul>
+          <?php get_search_form(); ?>
+        </div>
+      </div>
+    </nav>
   </header>
