@@ -48,6 +48,11 @@ Version: 1.0
     width: 20px;
 }
 
-h1{
+h1, article{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.previousNext{
     text-align: center;
 }

@@ -5,11 +5,10 @@
         <article class="post">
 
             <h1><?php the_title(); ?></h1>
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail('post_thumbnail', ['class' => 'img-fluid']); ?>
 
             <div class="post__meta">
-                <?php echo get_avatar(get_the_author_meta('ID'), 40); ?>
-                <p>
+                <p class="mb-5">
                     Publié le <?php the_date(); ?>
                     par <?php the_author(); ?>
                     Dans la catégorie <?php the_category(); ?>
@@ -17,19 +16,25 @@
                 </p>
             </div>
 
-            <div class="post__content">
+            <div class="post__content mb-5">
                 <?php the_content(); ?>
             </div>
-            <?php comments_template(); // Par ici les commentaires ?>
+            <?php comments_template(); // Par ici les commentaires 
+            ?>
         </article>
 
-<?php endwhile; endif; ?>
-<div class="site__navigation">
-	<div class="site__navigation__prev">
-		<?php previous_post_link( 'Article Précédent<br>%link' ); ?>
-    </div>
-    <div class="site__navigation__next">
-        <?php next_post_link( 'Article Suivant<br>%link' ); ?>
+<?php endwhile;
+endif; ?>
+<div class="site__navigation ">
+    <div class="container mb-5">
+        <div class="row d-flex">
+            <div class="site__navigation__prev col-6 border previousNext">
+                <?php previous_post_link('<-- Article Précédent<br>%link'); ?>
+            </div>
+            <div class="site__navigation__next col-6 border previousNext">
+                <?php next_post_link('Article Suivant --><br>%link '); ?>
+            </div>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>
