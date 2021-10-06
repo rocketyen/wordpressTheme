@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<?php if (has_post_thumbnail()) : ?>
-    <div class="post__thumbnail">
-        <?php the_post_thumbnail(); ?>
-    </div>
-<?php endif; ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

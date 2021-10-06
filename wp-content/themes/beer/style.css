@@ -31,12 +31,23 @@ Version: 1.0
     font-size: 20px;
     color: white;
 }
-img{
-    margin-left: 50px;
-    height: 15px;
-    width: 15px;
+.beer{
+    height: 150px;
+    width: auto;
+}
+
+.navColor{
+    background-color: #F4F1E8;
+}
+
+.search{
+    width: auto;
 }
 
 .logo{
-    width: 40px;
+    width: 20px;
+}
+
+h1{
+    text-align: center;
 }

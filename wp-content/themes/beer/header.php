@@ -9,8 +9,8 @@
 
 <body <?php body_class('site'); ?>>
   <header class="site_header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid navColor">
         <a class="navbar-brand" href="#"></a>
         <a href="<?php echo home_url('/'); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="beer">
@@ -19,7 +19,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="nav navbar-nav mb-lg-0">
             <?php
             $itemsArray = wp_get_nav_menu_items(
               'menuPersoHead'
