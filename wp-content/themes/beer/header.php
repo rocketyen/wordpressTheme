@@ -7,7 +7,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('site'); ?>>
+<body <?php body_class('site'); ?> class="navColor">
   <header class="site_header">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid navColor">

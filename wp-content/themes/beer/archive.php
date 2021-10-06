@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <h1 class="site__heading">Le blog</h1>
 
-<div class="site__blog">
+<div class="site__blog navColor">
 	<main class="site__content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article class="post">

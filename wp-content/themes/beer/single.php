@@ -2,7 +2,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <article class="post">
+        <article class="post navColor">
 
             <h1><?php the_title(); ?></h1>
             <?php the_post_thumbnail('post_thumbnail', ['class' => 'img-fluid']); ?>
@@ -25,7 +25,7 @@
 
 <?php endwhile;
 endif; ?>
-<div class="site__navigation ">
+<div class="site__navigation navColor">
     <div class="container mb-5">
         <div class="row d-flex">
             <div class="site__navigation__prev col-6 border previousNext">
